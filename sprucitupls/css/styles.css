@@ -1,0 +1,309 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url(../fonts/poppins-medium-webfont.woff) format('woff2'),
+         url(../fonts/poppins-medium-webfont.woff2) format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Poppins-Bold';
+    src: url(../fonts/poppins-bold-webfont.woff) format('woff2'),
+         url(../fonts/poppins-bold-webfont.woff2) format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ssr';
+    src: url(../fonts/sourcesanspro-regular-webfont.woff) format('woff2'),
+         url(../fonts/sourcesanspro-regular-webfont.woff2) format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+:root{
+    --whiteSnow:#FFFBFC;
+    --richBlack: #010400; 
+    --blackOlive: #30332E;
+    --maxBlueGreen: #62BBC1;
+    --deepCherise: #EC058E;
+
+}
+.hidden{
+    display:none;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0; 
+    text-align: left;
+    padding-top: 8px;
+}
+ul{
+    list-style: none;
+    background-color: var(--whiteSnow);
+    
+    padding: 0;
+}
+li{
+    text-decoration: none;
+}
+a {
+    text-decoration: none;
+    color: black;
+    align-items: center;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    margin:1rem, 0rem;
+    position: fixed;
+    padding: .5rem;
+    box-shadow: 0rem 0rem 0.2rem 0rem;
+    left: 0;
+    right: 0;
+    background-color: var(--whiteSnow);
+    z-index: 100;
+}
+header li{
+    list-style: none;
+    
+    font-family: Poppins;
+    font-size: 1rem;
+    line-height: 1.5rem; 
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border-top: 1px solid #171715;
+ 
+}
+header li:last-of-type{
+    border-bottom: 1px solid #171715;
+    margin-bottom: 2rem;
+}
+header li a{
+    
+    color: var(--dk-blue); 
+    padding-left: 1rem;
+    font-size: 1.875rem;
+    line-height: 1.125rem;;
+    color: var(--dk-blue);
+    font-weight: 700;
+    font-family: Poppins-Bold;
+}
+.fa-bars{
+    position: relative;
+    width: 219px;
+    font-size: 2.5rem;
+    left: 17px;
+    top: 11px;
+    
+}
+.menu-btn{
+    flex-shrink: 0;
+    width: 68px;
+    height: 68px;
+    position: relative;
+    background-color: var(--maxBlueGreen);
+    border-radius: 32px;
+}
+.menu-btn span {
+    position: relative;
+    
+    top: 21px;
+    left: 15px;
+    font-size: 30px;
+    height: 34px;
+
+}
+.menu-btn .fa-bars{
+    padding-top: 2px;
+}
+.menu-btn hr{
+    color: black;
+    margin: 0;
+    margin-bottom: 3px;
+    width: 60%;
+}
+.menu-btn:nth-child(2) hr{
+    color: black;
+    margin:5px 0px 5px 0px;
+    margin-bottom: 3px;
+    width: 60%;
+}
+header>div>a:first-of-type{
+    font-family: Poppins;
+    font-size: 22px;
+    color: var(--blackOlive);
+    font-weight: 700;
+    align-items: center;
+}
+.mainTitle{
+    font-family: Poppins;
+    font-size: 22px;
+    color: var(--blackOlive);
+    font-weight: 700;
+    align-items: center;
+}
+header svg {
+    fill: var(--blackOlive);
+}
+header>div {
+    display: flex;
+    background-color: var(--whiteSnow);
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+nav {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+    display: none;
+    position: absolute;
+    top: 91%;
+    left: 0;
+    right: 0;
+    
+}
+header hr{
+    margin: 1rem 0 1rem 0;
+}
+header hr:first-of-type{
+    margin-top: 8px;
+}
+
+.caroselText h5{
+    font-family: ssr;
+    font-size: 2rem;
+    margin-top: 1rem;
+    position: relative;
+    top: 1rem;
+}
+.caroselText p{
+    font-family: ssr;
+    font-size: .75rem;
+    color: var(--whiteSnow);
+    padding: .5rem;
+    margin: 0 auto;
+}
+.opacityLayer{
+    background-color: var(--blackOlive);
+    opacity: 50%;
+    align-content: center;
+    
+    position: relative;
+    justify-content: center;
+    border-color: var(--blackOlive);
+    border-radius: 5px;
+    
+}
+.containerCss{
+    margin: 0 auto;
+  
+}
+.containerCss h2:first-of-type{
+    font-family: 'milkshake';
+    font-weight: 800;
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 1rem 0;
+    text-decoration: underline;
+}
+
+.carousel-item img{
+    min-height: 275px;
+    max-height: 450px;
+}
+.aboutUsSection{
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-basis: 25%;
+    
+}
+
+.aboutImage{
+    text-align: center;
+    background-image: url(../img/aboutUs.jpeg);
+    min-height: 275px;
+    max-height: 450px;
+    flex-basis: 100%;
+    padding: 0 1rem
+    background-position:center bottom;
+}
+.aboutUsSection p{
+    font-family: ssr;
+    font-weight: 400;
+    text-align: center;
+    padding-bottom: 1rem;
+    margin: 1rem;
+}
+.contactSection h2{
+    font-family: ssr;
+    font-weight: 400;
+    font-family: milkshake;
+    font-size: 3rem;
+    
+}
+.servicesSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.servicesSection p{
+    margin-bottom: 1rem;
+}
+.lawnCareImage {
+    text-align: center;
+    background-image: url(../img/LawnMower.jpeg);
+    height: 300px;
+    width: 100%;
+    background-position:  center ;
+    background-size: cover;
+}
+.gardenDesignImage{
+    text-align: center;
+    background-image: url(../img/gradenDesign.jpeg);
+    height: 300px;
+    width: 100%;
+    background-position:  center bottom;
+    background-size: cover;
+}
+.seasonalImage{
+    text-align: center;
+    background-image: url(../img/seasonalImage.jpeg);
+    height: 300px;
+    width: 100%;
+    background-position:  center bottom;
+    background-size: cover;
+    margin-bottom: 2rem;
+}
+.contactSection {
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+}
+.contactSection a{
+        display: block;
+        font-size: 1rem;
+        color: var(--richBlack);
+        font-weight: 700;
+        font-family: ssr;
+}
+@media(min-width:750px){
+    header{
+        top: 0;
+    }
+
+
+
+
+
+
+}
