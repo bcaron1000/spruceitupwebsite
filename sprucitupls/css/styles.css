@@ -318,6 +318,7 @@ h3{
     text-align: center;
     display:flex;
     flex-direction: column;
+    padding: 2rem 0;
 }
 .contactSection  p{
         display: block;
@@ -338,6 +339,7 @@ h3{
     flex-direction: column;
     justify-content: center;
     background-color: var(--blackOlive);
+    padding: 2rem;
 }
 .bottomSect h3{
     list-style: none;
@@ -393,7 +395,7 @@ h3{
     header h1{
         margin-top: 3rem;
     }
-    header nav div:last-of-type li{
+    header nav li{
         border: 1px solid #dbecec;
         border-radius: 7px;
         padding: 11px 15px;
@@ -410,9 +412,16 @@ h3{
     header li:nth-child(3){
         padding-right: 2rem;
     }
-    header nav li:last-of-type{
-        border-bottom: none;
-        padding-bottom: 0;
+   
+    .opacityLayer h5{
+        font-family: 'galasio';
+        font-size: 3rem;
+        opacity: 1;
+        padding-bottom: .4rem;
+    }
+    .opacityLayer p{
+        font-size: 1rem;
+        
     }
     .aboutUsSection {
         display: flex;

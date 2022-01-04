@@ -1,0 +1,24 @@
+{
+  "name": "sprucitupls",
+  "version": "1.0.0",
+  "description": "Simple Website build",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bcaron1000/spruceitupwebsite.git"
+  },
+  "keywords": [
+    "Spruce",
+    "it",
+    "up"
+  ],
+  "author": "Bryan Caron",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bcaron1000/spruceitupwebsite/issues"
+  },
+  "homepage": "https://github.com/bcaron1000/spruceitupwebsite#readme"
+}
