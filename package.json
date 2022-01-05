@@ -5,7 +5,7 @@
   "default": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "rm -rf .parcel-cache dist && npm run static && npx parcel build index.html && npx parcel index.html",
+    "start": "rm -rf .parcel-cache dist && npm run static && npx parcel build src/index.html && npx parcel src/index.html",
     "build": "npm run static && npx parcel build src/index.html",
     "clean": "rm -rf node_modules",
     "reinstall": "npm run clean && npm install",
