@@ -5,3 +5,4 @@ $(".menu-btn").click(function(e){
     e.preventDefault();//prevents the default from firing the link
 
 });
+
