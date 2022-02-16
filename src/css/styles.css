@@ -71,6 +71,7 @@ header{
     margin-top: 0px;
     display: flex;
     justify-content: space-between;
+    border-bottom:.15rem solid rgba(15, 67, 48) ;
 }
 h1{
     font-family: 'galasio';
@@ -124,8 +125,11 @@ header nav div:last-of-type p{
 }
 header nav li{
     padding: 1rem;
+    display: flex;
+    align-content: center;
     
 }
+
 header nav div:last-of-type a{
     color: rgba(78,185,76);
 }
@@ -175,7 +179,7 @@ header>div>a:first-of-type{
 .mainTitle{
     font-family: Poppins;
     font-size: 22px;
-    color: var(rgba(15, 67, 48));
+    color: rgba(15, 67, 48);
     font-weight: 700;
     align-items: center;
 }
@@ -246,7 +250,7 @@ header hr:first-of-type{
 }
 .serveSection{
     background-color: rgba(78,185,76);
-    padding:1rem;
+    padding:1rem 0;
 }
 .serveSection p{
     color:var(--whiteSnow);
@@ -434,9 +438,7 @@ h3{
     .carousel-item img{
         min-height: 700px;
     }
-    header li:nth-child(3){
-        padding-right: 2rem;
-    }
+   
    
     .opacityLayer h5{
         font-family: 'galasio';
@@ -489,7 +491,9 @@ h3{
     .lawnCareSection img{
         flex-basis: 50%;
     }
-    
+    .lowerContainer{
+        margin: 0;
+    }
    
     .gardenDesignSection{
         display: flex;
