@@ -1,54 +1,9 @@
-@font-face {
-    font-family: 'Poppins';
-    src: url(../fonts/poppins-medium-webfont.woff) format('woff2'),
-         url(../fonts/poppins-medium-webfont.woff2) format('woff');
-    font-weight: 700;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'galasio';
-    src: url(../fonts/gelasio-medium-webfont.woff) format('woff2'),
-         url(../fonts/gelasio-medium-webfont.woff2) format('woff');
-    font-weight: 600;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Alex';
-    src: url(../fonts/alexbrush-regular-webfont.woff) format('woff2'),
-         url(../fonts/alexbrush-regular-webfont.woff2) format('woff');
-    font-weight: 700;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Poppins-Bold';
-    src: url(../fonts/poppins-bold-webfont.woff) format('woff2'),
-         url(../fonts/poppins-bold-webfont.woff2) format('woff');
-    font-weight: 700;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'ssr';
-    src: url(../fonts/sourcesanspro-regular-webfont.woff) format('woff2'),
-         url(../fonts/sourcesanspro-regular-webfont.woff2) format('woff');
-    font-weight: 100;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'milkshake';
-    src: url(../fonts/milkshake-webfont.woff2) format('woff2'),
-         url(../fonts/milkshake-webfont.woff) format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'b612';
-    src: url(../fonts/b612-regular-webfont.woff2) format('woff2'),
-         url(../fonts/b612-regular-webfont.woff) format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
+
 :root{
     --whiteSnow:#FFFBFC;
+    --greyMatter:rgb(188,174,194);
+    --darkBlack:#000103;
+    --elevateOrange:rgba(253,95,3);
 }
 .hidden{
     display:none;
@@ -66,35 +21,33 @@ header{
     right: 0;
     left: 0;
     width: 100%;
-    background-color:var(--whiteSnow);
+    background-color:var(--greyMatter);
     z-index: 2;
     margin-top: 0px;
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    border-bottom:.15rem solid rgba(15, 67, 48) ;
+    height: 3rem;
 }
-h1{
-    font-family: 'galasio';
-    font-size: 2rem;
-    color: rgba(15, 67, 48);
-    
-}
+
 .fas{
     font-size: 2rem;
     color: rgba(15, 67, 48);
     position: absolute;
-    top: 1rem;
+    top: 0;
     right: 1rem;
 }
 header a:link {
-    color: rgba(78,185,76);
+    color: var(--darkBlack);
+    font-family: 'Cormorant Infant', serif;
   }
  
 header a:hover {
-    color: rgba(15, 67, 48);
+    color: var(--whiteSnow);
 }
 header li:hover{
-    background-color: rgba(78,185,76);
+    background-color: rgb(114, 114, 114);
+    
 }
 nav {
     display: flex;
@@ -107,19 +60,33 @@ nav {
     top: 100%;
     left: 0;
     right: 0;
-    background-color: var(--whiteSnow);
+    background-color: var(--greyMatter);
 }
 header div:first-of-type{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
 }
-header div:first-of-type h1{
-    margin-left: 1rem;
-} 
+header h1{
+    display: flex;
+}
+header div span:first-of-type{
+    color: var(--elevateOrange);
+    font-size: 1.5rem;
+    font-family: 'Mitr', sans-serif;
+
+}
+header div h1{
+    color: var(--darkBlack);
+    font-size: 1.5rem;
+    font-family: 'Cormorant Infant', serif;
+}
+
 header nav div:last-of-type p{
     border: 1px solid rgba(78,185,76);
-    padding: 11px 15px;
-    margin-bottom: 1rem;
+    
+    
     margin-left: .5rem;
     margin-top: 1rem;
 }
@@ -127,22 +94,26 @@ header nav li{
     padding: 1rem;
     display: flex;
     align-content: center;
-    
+    width: 100%;
 }
 
 header nav div:last-of-type a{
-    color: rgba(78,185,76);
+    color: var(--elevateOrange);
 }
-header svg{
-    
-    margin-top: 1rem;
-    margin-left: 2rem;
-    width: 50px;
-    height: 50px;
+a{
+    color: var(--elevateOrange);
+}
+header img{
+    margin-top: 0em;
+    margin-left: .25rem;
+    width: 45px;
     
 }
 header ul {
     padding-inline-start: 1rem;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding:0;
 }
 header li{
     list-style: none;
@@ -153,7 +124,7 @@ header li{
 }header li a{
     font-size: 1rem;
     line-height: 1.5rem;
-    color: rgba(78,185,76); 
+    
 }
 header nav div:last-of-type{
     display: flex;
@@ -210,7 +181,7 @@ header hr:first-of-type{
 }
 .carousel{
     position:relative;
-    top: 3rem;
+    top: 1rem;
 }
 .caroselText h5{
     font-family: 'Poppins';
@@ -248,19 +219,21 @@ header hr:first-of-type{
     max-width: 1100px;
     margin: 0 auto;
 }
-.serveSection{
-    background-color: rgba(78,185,76);
-    padding:1rem 0;
+.serviceSection{
+    background-color:var(--greyMatter);
+    padding:0 0 1rem 0;
 }
 .serveSection p{
-    color:var(--whiteSnow);
+    color:var(--darkBlack);
+    font-family: 'Mitr', sans-serif;
 }
-.serveSection h2{
-    color:var(--whiteSnow);
+.serviceSection h2{
+    color:var(--darkBlack);
     padding-bottom: 1rem;
 }
-.lowerContainer{
-    margin: 0 1rem;
+.serviceSection a{
+    color: var(--elevateOrange);
+    font-weight: 900;
 }
  h2{
     font-family: 'galasio';
@@ -273,20 +246,21 @@ header hr:first-of-type{
     padding-top: .5rem;
 }
 h3{
-    font-family: 'ssr';
-    font-weight: 900;
-    color:var(--whiteSnow);
+    
+    font-family: 'Anton', sans-serif;
+    font-weight: 500;
+    color:var(--darkBlack);
 }
 .carousel-item img{
     position: relative;
     background-size: contain;
     min-height: 275px;
-    max-height: 450px;
+    max-height: 295px;
 }
 .aboutUsSection{
     display: flex;
     flex-direction: column; 
-    padding-top: 4rem; 
+    padding-top: 1.5rem; 
 }
 .lowerContainer:first-child h2{
     display:flex;
@@ -294,8 +268,10 @@ h3{
     padding-top: 7rem;
 }
 .aboutUsSection img {
-        width: 100%;
-        height: 300px;
+    display: flex;
+    align-self: center;
+        width: 65%;
+        
 }
 .aboutUsSection p{
     font-family: ssr;
@@ -319,20 +295,32 @@ h3{
     margin-bottom: 1rem;
     font-family: 'ssr';
 }
-.lawnCareSection img {
-    align-self: center;
-        width: 100%;
-        height: 350px;      
+.newCon{
+    padding: 0 .5rem; 
 }
-.gardenDesignSection img {
+.newCon img {
         align-self: center;
         width: 100%;
-        height: 350px;
+        padding-bottom: .15rem; 
+        height: 300px;  
 }
-.seasonalSection img {
+.residential{
+    padding: 0 .5rem;
+}
+.residential img {
         align-self: center;
         width: 100%;
-        height: 350px;   
+        height: 300px; 
+        padding-bottom: .15rem; 
+}
+.repairs{
+    padding: 0 .5rem;
+}
+.repairs img {
+        align-self: center;
+        width: 100%;
+        height: 300px; 
+        padding-bottom: .15rem;  
 }
 .split{
     margin: 0 .5rem 0 .5rem;
@@ -346,15 +334,20 @@ h3{
 .contactSection  p{
         display: block;
         font-size: 1.5rem;
-        color: rgba(15, 67, 48);
-        font-weight: 900;
-        font-family: 'gelasio';
+        color: var(--darkBlack);
+        font-weight: 500;
+        font-family: 'Anton', sans-serif;
 }
 .contactSection  a{
     display: block;
     font-size: 1.5rem;
-    color: rgba(78,185,76);
-    font-family: 'gelasio';
+    color: var(--elevateOrange);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+.contactSection a:hover{
+    color: var(--darkBlack);
+    font-size: 1.7rem;
 }
 .bottomSect{
     text-align: center;
@@ -362,25 +355,54 @@ h3{
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    background-color: rgba(78,185,76);
+    background-color: var(--greyMatter);
     padding: 2rem;
 }
 .bottomSect h3{
     list-style: none;
-    font-family: 'ssr';
-    color: var(--whiteSnow);
+    font-family: 'Anton', sans-serif;
+    color: var(--darkBlack);
  }
 .bottomSect a{
    list-style: none;
-   font-family: 'ssr';
+   font-family: 'Anton', sans-serif;
    color: var(--whiteSnow);
+   font-size: 1.5rem;
 }
+.bottomSect a:hover{    
+    color: var(--elevateOrange);
+    font-size: 1.7rem;
+ }
 .bottomSect ul{
     list-style: none;
     margin: 0;
     padding-right: 2rem;
     
  }
+ .bottomSect li:first-of-type{
+    font-family: 'Mitr', sans-serif;
+ }
+/* Gallery Styles */
+.galleryContainer{
+    max-width: 1100px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem .5rem 1rem .5rem;   
+}
+.galleryContainer div{
+    justify-content: space-around;
+    padding: .5rem;
+    
+}
+.galleryContainer img{
+    display: block;
+    max-width: 100%;
+    border-style: none;
+    padding-bottom: .5rem;
+    
+}
 
 @media(min-width:768px){
     .menu-btn{
@@ -391,6 +413,22 @@ h3{
         display: flex;
         justify-content: space-between;
         margin-top: -25px;
+        height: 7rem;
+    }
+    header img{
+        margin-top: 1.75rem;
+        margin-left: .25rem;
+        width: 100px;
+        padding: .25rem;
+        padding-left: 1rem;
+        
+    }
+    header div:first-of-type{
+        width: 25%;
+        z-index: inherit;
+    }
+    header nav{
+        width: 75%;
     }
     header h1{
         margin-right: 0;
@@ -404,33 +442,40 @@ h3{
     header ul{
         display: flex;
         flex-direction: row;
-        margin-top: 1rem;
+
+        height: 3rem;
     }
     nav  {
         position: static;
         display: flex !important;
-        justify-content: center;
-    }
-    header svg{
-        margin-top: 1.95rem;
-        margin-left: 2rem;
-        width: 90px;
-        height: 90px;
-        
+        justify-content: flex-end;
+        padding-right: 0.25rem;
     }
     header h1{
-        margin-top: 4rem;
+        display: none;
     }
+
+    
     header ul{
-        margin-top: 2rem;
+        margin-top: 0;
     }
     header nav li{
-        border: 1.5px solid rgba(78,185,76);
+        border: 1.75px solid var(--elevateOrange);
         border-radius: 7px;
-        padding: 10px 15px;
+        padding: 0;
+        display: flex;
+        align-items: center;
         margin: 1rem;
         margin-left: .5rem;
-        margin-top: 2rem;
+        margin-top: .75rem;
+        height: 3rem;
+        width: 7rem;
+        justify-content: center;
+    }
+    header nav a{
+        align-items: center;
+        
+        
     }
     header li{
         list-style: none;  
@@ -441,7 +486,6 @@ h3{
    
    
     .opacityLayer h5{
-        font-family: 'galasio';
         font-size: 3rem;
         opacity: 1;
         padding-bottom: .4rem;
@@ -460,6 +504,7 @@ h3{
     }
     .aboutUsSection p{
         font-family: 'ssr';
+        font-size: 1.25rem;
         
     }
     .aboutUsSection div:first-of-type{
@@ -478,65 +523,104 @@ h3{
         align-items: center;
         flex-basis: 50%;
     }
+    .aboutUsSection img{
+        padding-bottom: 1.5rem;
+    }
     .servicesSection{
         display: flex;
         flex-direction: column;
     }
-    .lawnCareSection{
+    .newCon{
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-around;
         padding-top: 1rem;
     }
-    .lawnCareSection img{
+    .newCon img{
         flex-basis: 50%;
     }
     .lowerContainer{
         margin: 0;
     }
    
-    .gardenDesignSection{
+    .residential{
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        padding-top: 1rem;
+        padding:1rem .5rem 0 .5rem;
     }
-    .gardenDesignSection img{
+    .residential img{
         flex-basis: 50%;
     }
-    .seasonalSection{
+    .repairs{
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-around;
         padding-top: 1rem;
     }
-    .seasonalSection img{
+    .repairs img{
         display: flex;
         flex-basis: 50%;
     }
     .bottomSect{
         display: flex;
-        align-items:baseline;
+        align-items:center;
         flex-direction: row;
         justify-content: center;
-        background-color: rgba(78,185,76);
+        
     }
     .bottomSect h3{
-
+        padding-top: 2rem;
         list-style: none;
-        font-family: 'ssr';
-        color: var(--whiteSnow);
      }
     .bottomSect a{
        list-style: none;
        font-family: 'ssr';
-       color: var(--whiteSnow);
+      
     }
     .bottomSect ul{
         list-style: none;
         
      }
-
+/* Gallery Styles */
+.galleryContainer{
+    padding: 0;
+}
+.galleryContainer div{
+    justify-content: space-between;
+    padding: .5rem;
+    
+}
+.galleryContainer img{
+    display: block;
+    max-width: 100%;
+    border-style: none;
+    padding-bottom: .5rem;
+    
+}
+.singlePic img{
+    width:100%;
+    height: 100%;
+}
+.dualPic{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.dualPic img{
+    width: 49.5%;
+    height: 49.5%;
+}
+.quadPic{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.quadPic img{
+    width: 24%;
+    height: 24%;
+}
 
 
 
