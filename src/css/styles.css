@@ -94,6 +94,8 @@ header a:hover {
 }
 header li:hover{
     background-color: rgba(78,185,76);
+    color: rgba(15, 67, 48);
+
 }
 nav {
     display: flex;
@@ -149,7 +151,7 @@ header li{
 }header li a{
     font-size: 1rem;
     line-height: 1.5rem;
-    color: rgba(78,185,76); 
+    color:rgba(15, 67, 48);
 }
 header nav div:last-of-type{
     display: flex;
@@ -433,11 +435,7 @@ h3{
     }
     .carousel-item img{
         min-height: 700px;
-    }
-    header li:nth-child(3){
-        padding-right: 2rem;
-    }
-   
+    }   
     .opacityLayer h5{
         font-family: 'galasio';
         font-size: 3rem;
@@ -532,8 +530,4 @@ h3{
         list-style: none;
         
      }
-
-
-
-
 }
